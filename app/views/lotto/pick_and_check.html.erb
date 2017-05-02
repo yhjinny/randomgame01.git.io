@@ -1,8 +1,33 @@
-<div class = "container">
-     <h1>결과를 보여주는 페이지 입니다.</h1>
-     <p><%= "이번주 로또 번호는 #{@drw_numbers2} 이고,  보너스 번호는 #{@bonus_number2} 입니다."%></p>
-     <p><%="추첨한 로또 번호는 #{@my_numbers2} 입니다."%></p>
-     <p><%="겹치는 번호는 #{@match_numbers2} 입니다."%></p>
-     <p><%="결과는 #{@result2} 입니다."%></p>
+<html>
+     <head>
+          <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+     </head>
+          
+          <body style="background-color:pink;">
+               
+              <div class = "container">
+                    <div class="col-md-4 offset-md-4">
+                         <div class="well well-lg">
+                              <h1><i class="fa fa-pagelines" aria-hidden="true"></i>TODAY'S LUCKY THINGS</h1>
+                              <h4><i class="fa fa-apple" aria-hidden="true"></i> Your lucky color is <%= @my_lucky_color%></h4>
+                              <h4><i class="fa fa-apple" aria-hidden="true"></i> Your lucky number is <%=@my_lucky_num%></h4>
+                         
+                         <h2>GOOD LUCK:)</h2>
+                    
+                    </div>
+               </div>
+          
+          
+          </div>
+          
+          </body>
 
-</div>
+</html>
